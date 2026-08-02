@@ -117,7 +117,7 @@ if uploaded_pdf and st.sidebar.button("⚡ Scan & Parse Report"):
 
                 # FIXED: Updated model string to "gemini-1.5-flash"
                 response = client.models.generate_content(
-                    model="gemini-3.5-flash",
+                    model="gemini-1.5-flash",
                     contents=[pdf_part, extraction_prompt],
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
